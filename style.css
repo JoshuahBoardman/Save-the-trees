@@ -1,0 +1,46 @@
+/* Global styles*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lusitana', serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem 1rem;
+    width: 100vw;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav {
+    position: relative;
+}
+
+.hamburger {
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: absolute;
+    top: -100px;
+}
