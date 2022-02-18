@@ -9,25 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4d30777b80.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <title>Save the trees</title>
 </head>
 <body>
     <header>
-        <h1 class="logo">SaveTheTrees</h1>
+        <h1 class="logo">
+            <a href="#">SaveTheTrees</a>
+        </h1>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav>
-            <button class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-list">
+            <ul class="nav-menu" id="nav-menu" data-visible="false" >
                 <li class="nav-item">
-                    <a href="#">About Us</a>
+                    <a href="#" class="nav-links">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">What We Do</a>
+                    <a href="#" class="nav-links">What We Do</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Our Cause</a>
+                    <a href="#" class="nav-links">Our Cause</a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +70,7 @@
                 </a>
             </div>
             <div class="social-icon-wrapper">
-                <a href="#" class="social-icons">footer-
+                <a href="#" class="social-icons">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
