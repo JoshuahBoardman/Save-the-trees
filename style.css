@@ -80,7 +80,8 @@ header {
         inset: 0 0 60% 0;
         background-color: black;
         padding-top: 3rem;
-        transform: translateX(100%);
+        transform: translateY(-100%);
+        transition: transform 350ms ease-out;
     }
 
     .nav-menu[data-visible="true"] {
