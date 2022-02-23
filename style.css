@@ -11,7 +11,12 @@
 body {
     font-family: 'Lusitana', serif;
     background-color: #fff;
+    min-height: 100%;
 }
+
+/* ToDo Make the the whole page look good on desktop */
+
+/* Header */
 
 header {
     z-index: 2;
@@ -20,8 +25,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1.5rem;
-    width: 100vw;
+    padding: 1.25rem 1.25rem;
+    width: 100%;
 }
 
 .logo {
@@ -94,3 +99,59 @@ header {
         font-size: 1.5rem;
     }
 }     
+
+/* Hero Section */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./imgs/jason-leem-50bzI1F6urA-unsplash\ \(1\)\ \(1\).jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 5rem 1rem;
+}
+
+.hero-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+}
+
+.hero-sub-text {
+    display: none;
+}
+
+/* About Us */
+
+/* Our Cause */
+
+/* Take Action */
+
+/* Footer */
+
+/* Components */
+
+.btn {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: .15rem;
+    padding: 1rem 1.5rem;
+}
