@@ -13,6 +13,14 @@ body {
     background-color: #fff;
 }
 
+/* Global */
+
+.sub-text {
+    color: rgb(26, 26, 26);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
 /* ToDo Make the the whole page look good on desktop */
 
 /* Header */
@@ -111,6 +119,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem 1rem;
 }
 
 .hero-text {
@@ -120,7 +129,6 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin: 5rem 1rem;
 }
 
 .hero-title {
@@ -135,7 +143,52 @@ header {
 
 /* About Us */
 
-/* Our Cause */
+.about-us-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.about-us-text {
+}
+
+.about-us-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-img {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+/* Our Methods */
+
+.our-methods-section {
+    padding: 0 1rem 2rem;
+}
+
+.our-methods-header {
+    margin-bottom: 1rem;
+}
+
+.our-methods-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.our-methods-card {
+    margin-top: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 
 /* Take Action */
 
