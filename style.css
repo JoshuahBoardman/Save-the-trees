@@ -13,7 +13,12 @@ body {
     background-color: #fff;
 }
 
-/* Global */
+.screen-reader {
+    position: absolute;
+    left: -10000px;
+}
+
+/* Typography*/
 
 .sub-text {
     color: rgb(26, 26, 26);
@@ -192,7 +197,65 @@ header {
 
 /* Take Action */
 
+.take-action-section {
+    padding: 0 1rem 2rem;
+}
+
+.take-action-text {
+    margin-bottom: 2rem;
+}
+
+.take-action-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.take-action-form {
+
+}
+
+.name-input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .15rem;
+    padding: 12px 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.email-input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: .15rem;
+    padding: 12px 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
 /* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 1rem;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Components */
 
