@@ -11,11 +11,29 @@
 body {
     font-family: 'Lusitana', serif;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .screen-reader {
     position: absolute;
     left: -10000px;
+}
+
+/* Body styles */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 2000px;
+}
+
+@media (min-width: 768px) { 
+    .content-wrapper {
+    }
 }
 
 /* Typography*/
@@ -42,7 +60,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
-    max-width: 1400px;
+    max-width: 2000px;
 
 }
 
@@ -118,8 +136,14 @@ header {
 }    
 
 @media (min-width: 768px) { 
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
     .inner-header-wrapper {
         padding: 1.25rem 2rem;
+        width: 100%;
     }
 
     .logo {
@@ -130,15 +154,6 @@ header {
         font-size: 1.05rem;
         text-decoration: none;
     }
-}
-
-/* Page Body */
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1400px;
 }
 
 /* Hero Section */
@@ -154,6 +169,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 5rem 1rem;
+    width: 100%;
 }
 
 .hero-text {
@@ -317,6 +333,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem 1rem;
+    width: 100%;
 }
 
 .footer-nav-list {
