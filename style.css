@@ -31,14 +31,19 @@ body {
 /* Header */
 
 header {
-    z-index: 2;
     background-color: #000;
+    width: 100%;
+}
+
+.inner-header-wrapper {
+    z-index: 2;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 1.25rem;
-    width: 100%;
+    padding: 1.25rem;
+    max-width: 1400px;
+
 }
 
 .logo {
@@ -110,7 +115,31 @@ header {
     .nav-item {
         font-size: 1.5rem;
     }
-}     
+}    
+
+@media (min-width: 768px) { 
+    .inner-header-wrapper {
+        padding: 1.25rem 2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1.05rem;
+        text-decoration: none;
+    }
+}
+
+/* Page Body */
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+}
 
 /* Hero Section */
 
@@ -146,6 +175,19 @@ header {
     display: none;
 }
 
+@media (min-width: 768px) { 
+    .hero-title {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    .hero-sub-text {
+        font-size: 1.3rem;
+        display: block;
+        margin-bottom: 2.25rem;
+    }
+}
+
 /* About Us */
 
 .about-us-section {
@@ -166,10 +208,16 @@ header {
 }
 
 .about-us-img {
+    border-radius: .2rem;
     margin-top: 2rem;
     width: 100%;
 }
 
+@media (min-width: 768px) { 
+    .about-us-section {
+        padding: 2rem 2rem;
+    }
+}
 
 /* Our Methods */
 
@@ -196,6 +244,11 @@ header {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) { 
+    .our-methods-section {
+        padding: 0 2rem 2rem;
+    }
+}
 
 /* Take Action */
 
@@ -235,6 +288,24 @@ header {
     width: 100%;
 }
 
+.form-btn {
+    width: 100%;
+}
+
+@media (min-width: 768px) { 
+    .take-action-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem 2rem;
+    }
+
+    .take-action-form {
+        width: 70%;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -272,6 +343,17 @@ footer {
 .social-icons {
     font-size: 2rem;
     color: #fff;
+}
+
+@media (min-width: 768px) { 
+    footer {
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footer-nav-list {
+        gap: 1rem;
+        flex-direction: row;
+    }
 }
 
 /* Components */
