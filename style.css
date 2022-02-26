@@ -162,6 +162,7 @@ header {
 .about-us-title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    border-bottom: .1rem solid #000;
 }
 
 .about-us-img {
@@ -183,6 +184,7 @@ header {
 .our-methods-title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    border-bottom: .1rem solid #000;
 }
 
 .our-methods-card {
@@ -208,6 +210,7 @@ header {
 .take-action-title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    border-bottom: .1rem solid #000;
 }
 
 .take-action-form {
@@ -217,7 +220,7 @@ header {
 .name-input {
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: .15rem;
+    border-radius: .2rem;
     padding: 12px 20px;
     margin-bottom: 1rem;
     width: 100%;
@@ -226,7 +229,7 @@ header {
 .email-input {
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: .15rem;
+    border-radius: .2rem;
     padding: 12px 20px;
     margin-bottom: 1rem;
     width: 100%;
@@ -238,6 +241,7 @@ footer {
     background-color: #000;
     color: #fff;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -246,15 +250,28 @@ footer {
 
 .footer-nav-list {
     display: flex;
+    gap: .5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    list-style: none;
+}
+
+.footer-nav-item a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .social {
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+.social-icons {
+    font-size: 2rem;
+    color: #fff;
 }
 
 /* Components */
@@ -267,6 +284,6 @@ footer {
     background-color: #000; /* Green */
     color: #fff;
     border: none;
-    border-radius: .15rem;
+    border-radius: .2rem;
     padding: 1rem 1.5rem;
 }
