@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 2000px;
+    max-width: 1900px;
 }
 
 @media (min-width: 768px) { 
@@ -40,12 +40,27 @@ body {
 
 }
 
+@media (min-width: 1200px) { 
+
+}
+
 /* Typography*/
 
 .sub-text {
     color: rgb(26, 26, 26);
     font-size: 1.1rem;
     line-height: 1.5rem;
+}
+
+@media (min-width: 992px) { 
+    .sub-text {
+        font-size: 1.2rem;
+
+    }
+}
+
+@media (min-width: 1200px) { 
+
 }
 
 /* ToDo Make the the whole page look good on desktop */
@@ -64,7 +79,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
-    max-width: 2000px;
+    max-width: 1900px;
 
 }
 
@@ -165,6 +180,24 @@ header {
 
 }
 
+@media (min-width: 1200px) { 
+    .inner-header-wrapper {
+        padding: 1.25rem 3rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        gap: 2rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+}
+
 /* Hero Section */
 
 .hero {
@@ -201,6 +234,11 @@ header {
 }
 
 @media (min-width: 768px) { 
+
+    .hero {
+        padding: 5rem 2rem;
+    }
+
     .hero-title {
         font-size: 3rem;
         margin-bottom: .5rem;
@@ -209,11 +247,21 @@ header {
     .hero-sub-text {
         font-size: 1.3rem;
         display: block;
-        margin-bottom: 2.25rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 992px) { 
+    .hero {
+        padding: 10rem 2rem;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 1200px) { 
 
 }
 
@@ -262,15 +310,26 @@ header {
         padding: 4rem 2rem;
     }
 
+    .about-us-title {
+        font-size: 3rem;
+    }
+
     .about-us-img {
         margin:  0;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .about-us-section {
+        padding: 4rem 3rem;
     }
 }
 
 /* Our Methods */
 
 .our-methods-section {
-    padding: 0 1rem 2rem;
+    background-color: #000;
+    padding: 2rem 1rem;
 }
 
 .our-methods-header {
@@ -279,8 +338,14 @@ header {
 
 .our-methods-title {
     font-size: 2rem;
+    color: #fff;
     margin-bottom: 1rem;
-    border-bottom: .1rem solid #000;
+    border-bottom: .1rem solid #fff;
+}
+
+.our-method-sub-text {
+    color: #fff;
+    margin: 1rem 0 2rem;
 }
 
 .our-methods-card {
@@ -289,25 +354,90 @@ header {
 
 .card-title {
     font-size: 1.5rem;
+    color: #fff;
     margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #fff;
 }
 
 @media (min-width: 768px) { 
     .our-methods-section {
-        padding: 0 2rem 2rem;
+        padding: 2rem 2rem;
     }
 }
 
 @media (min-width: 992px) { 
     .our-methods-section {
-        padding: 0 2rem 4rem;
+        padding: 4rem 2rem;
+    }
+
+    .our-methods-title {
+        font-size: 3rem;
+
+    }
+
+    .card-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .our-methods-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 3rem;
+    }
+
+    .our-methods-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-methods-title {
+        font-size: 4rem;
+        border-bottom: 0;
+    }
+
+    .our-method-sub-text {
+        color: #fff;
+        margin: 0 0 1rem;
+    }
+
+    .our-methods-cards {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-methods-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .card-title {
+        border-bottom: .1rem solid #fff;
+        padding: 0 rem .5rem;
     }
 }
 
 /* Take Action */
 
 .take-action-section {
-    padding: 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
 .take-action-text {
@@ -321,18 +451,14 @@ header {
 }
 
 .take-action-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.name-input {
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: .2rem;
-    padding: 12px 20px;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
+.name-input,
 .email-input {
     display: inline-block;
     border: 1px solid #ccc;
@@ -352,18 +478,48 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 2rem 2rem;
+        padding: 2rem 2rem;
     }
 
     .take-action-form {
         width: 70%;
     }
+
+    .take-action-title {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 992px) { 
     .take-action-section {
-        padding: 0 2rem 4rem;
+        padding: 4rem 2rem;
     }
+}
+
+@media (min-width: 1200px) { 
+    .take-action-section {
+        flex-direction: row;
+        gap: 5rem;
+        padding: 4rem 3rem;
+    }
+
+    .take-action-text {
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+
+    .take-action-title {
+        margin-bottom: 1.5rem;
+    }
+
+    .take-action-form {
+        width: 50%;
+    }
+
+.name-input,
+.email-input {
+font-size: 1rem;
+}
 }
 
 /* Footer */
@@ -392,6 +548,7 @@ footer {
 .footer-nav-item a {
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .social {
@@ -404,6 +561,7 @@ footer {
 .social-icons {
     font-size: 2rem;
     color: #fff;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) { 
@@ -423,6 +581,12 @@ footer {
     }
 }
 
+@media (min-width: 1200px) { 
+    footer {
+        padding: 4rem 2rem 3rem;
+    }
+}
+
 /* Components */
 
 .btn {
@@ -435,4 +599,5 @@ footer {
     border: none;
     border-radius: .2rem;
     padding: 1rem 1.5rem;
+    cursor: pointer;
 }
