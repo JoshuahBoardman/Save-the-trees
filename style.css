@@ -28,20 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1900px;
-}
-
-@media (min-width: 768px) { 
-    .content-wrapper {
-    }
-}
-
-@media (min-width: 992px) { 
-
-}
-
-@media (min-width: 1200px) { 
-
+    max-width: 1500px;
 }
 
 /* Typography*/
@@ -49,7 +36,7 @@ body {
 .sub-text {
     color: rgb(26, 26, 26);
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 @media (min-width: 992px) { 
@@ -60,7 +47,9 @@ body {
 }
 
 @media (min-width: 1200px) { 
-
+    .sub-text {
+        font-size: 1.4rem;
+    }
 }
 
 /* ToDo Make the the whole page look good on desktop */
@@ -80,7 +69,6 @@ header {
     align-items: center;
     padding: 1.25rem;
     max-width: 1900px;
-
 }
 
 .logo {
@@ -214,6 +202,8 @@ header {
     width: 100%;
 }
 
+
+
 .hero-text {
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +247,7 @@ header {
     }
 
     .hero-title {
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 }
 
@@ -269,10 +259,13 @@ header {
 
 .about-us-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem;
+}
+
+.about-us-content-wrapper {
+
 }
 
 .about-us-text {
@@ -304,10 +297,13 @@ header {
 
 @media (min-width: 992px) { 
     .about-us-section {
+        padding: 4rem 2rem;
+    }
+
+    .about-us-content-wrapper {
         gap: 5rem;
         flex-direction: row;
         align-items: flex-start;
-        padding: 4rem 2rem;
     }
 
     .about-us-title {
@@ -323,17 +319,30 @@ header {
     .about-us-section {
         padding: 4rem 3rem;
     }
+
+    .about-us-content-wrapper {
+        gap: 10rem;
+    }
+
+    .about-us-title {
+        font-size: 3rem;
+
+    }
 }
 
 /* Our Methods */
 
 .our-methods-section {
     background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 1rem;
+    width:  100%;
 }
 
-.our-methods-header {
-    margin-bottom: 1rem;
+.our-methods-content-wrapper {
+
 }
 
 .our-methods-title {
@@ -386,11 +395,14 @@ header {
 
 @media (min-width: 1200px) { 
     .our-methods-section {
+        padding: 4rem 3rem;
+    }
+
+    .our-methods-content-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem 3rem;
     }
 
     .our-methods-header {
@@ -407,7 +419,7 @@ header {
 
     .our-method-sub-text {
         color: #fff;
-        margin: 0 0 1rem;
+        margin: 0 0 2rem;
     }
 
     .our-methods-cards {
@@ -425,8 +437,7 @@ header {
     }
 
     .card-title {
-        border-bottom: .1rem solid #fff;
-        padding: 0 rem .5rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -438,6 +449,10 @@ header {
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem;
+}
+
+.take-action-content-wrapper {
+    align-items: center;
 }
 
 .take-action-text {
@@ -474,10 +489,6 @@ header {
 
 @media (min-width: 768px) { 
     .take-action-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 2rem 2rem;
     }
 
@@ -498,9 +509,12 @@ header {
 
 @media (min-width: 1200px) { 
     .take-action-section {
+        padding: 6rem 3rem;
+    }
+
+    .take-action-content-wrapper {
         flex-direction: row;
-        gap: 5rem;
-        padding: 4rem 3rem;
+        gap: 10rem;
     }
 
     .take-action-text {
@@ -509,7 +523,7 @@ header {
     }
 
     .take-action-title {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .take-action-form {
@@ -518,7 +532,7 @@ header {
 
 .name-input,
 .email-input {
-font-size: 1rem;
+font-size: 1.2rem;
 }
 }
 
@@ -534,6 +548,10 @@ footer {
     align-items: center;
     padding: 2rem 1rem 1rem;
     width: 100%;
+}
+
+.footer-content-wrapper {
+    align-items: center;
 }
 
 .footer-nav-list {
@@ -585,6 +603,26 @@ footer {
     footer {
         padding: 4rem 2rem 3rem;
     }
+
+    .footer-content-wrapper {
+        gap: 1.5rem;
+    }
+
+    .footer-nav-list {
+        gap: 1.5rem;
+    }
+
+    .footer-nav-item a {
+        font-size: 1.2rem;
+    }
+
+    .social {
+        gap: 2rem;
+    }
+
+    .social-icons {
+        font-size: 3rem;
+    }
 }
 
 /* Components */
@@ -600,4 +638,10 @@ footer {
     border-radius: .2rem;
     padding: 1rem 1.5rem;
     cursor: pointer;
+}
+
+@media (min-width: 1200px) { 
+    .btn {
+        font-size: 1.2rem;
+    }
 }
