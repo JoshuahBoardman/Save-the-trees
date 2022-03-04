@@ -1,3 +1,8 @@
+:root {
+    --color-400: hsl(206, 56%, 35%);
+    --color-600: hsl(206, 56%, 10%);
+}
+
 /* Global styles*/
 
 *,
@@ -57,7 +62,7 @@ body {
 /* Header */
 
 header {
-    background-color: #000;
+    background-color: var(--color-400);
     width: 100%;
 }
 
@@ -273,6 +278,7 @@ header {
 
 .about-us-title {
     font-size: 2rem;
+    color: var(--color-600);
     margin-bottom: 1rem;
     border-bottom: .1rem solid #000;
 }
@@ -293,6 +299,10 @@ header {
     .about-us-section {
         padding: 2rem 2rem;
     }
+
+    .about-us-title {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 992px) { 
@@ -304,10 +314,6 @@ header {
         gap: 5rem;
         flex-direction: row;
         align-items: flex-start;
-    }
-
-    .about-us-title {
-        font-size: 3rem;
     }
 
     .about-us-img {
@@ -325,7 +331,7 @@ header {
     }
 
     .about-us-title {
-        font-size: 3rem;
+        font-size: 4rem;
 
     }
 }
@@ -333,7 +339,7 @@ header {
 /* Our Methods */
 
 .our-methods-section {
-    background-color: #000;
+    background-color: var(--color-400);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,18 +381,17 @@ header {
     .our-methods-section {
         padding: 2rem 2rem;
     }
+
+    .our-methods-title {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 992px) { 
     .our-methods-section {
         padding: 4rem 2rem;
     }
-
-    .our-methods-title {
-        font-size: 3rem;
-
-    }
-
+    
     .card-title {
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -461,6 +466,7 @@ header {
 
 .take-action-title {
     font-size: 2rem;
+    color: var(--color-600);
     margin-bottom: 1rem;
     border-bottom: .1rem solid #000;
 }
@@ -524,6 +530,7 @@ header {
 
     .take-action-title {
         margin-bottom: 2rem;
+        font-size: 4rem;
     }
 
     .take-action-form {
@@ -539,7 +546,7 @@ font-size: 1.2rem;
 /* Footer */
 
 footer {
-    background-color: #000;
+    background-color: var(--color-600);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -632,7 +639,7 @@ footer {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: #000; /* Green */
+    background-color: var(--color-400);
     color: #fff;
     border: none;
     border-radius: .2rem;
